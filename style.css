@@ -1,0 +1,226 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #efefef;
+    margin: 0;
+    padding: 1px;
+}
+
+header{
+    background-color: #af5250 ;
+    color: black;
+    padding:10px;
+}
+
+header h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+header a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+header a:hover{
+    color:#6d2835 ;
+}
+
+.container{
+     margin: 0px;
+     display: grid;
+     grid-template-columns:1fr;
+     grid-template-rows: 1fr;
+     gap: 20px;
+     padding: 60px;
+    
+}
+
+.container article{
+    transition: all 0.3s ease;
+    background-color:#fff;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+   
+.container article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+.container article h2, div article p{
+    margin: 1rem;
+}
+
+.container img{
+    width: 100%;
+    height: 60%;
+    justify-items: center;
+}
+
+.container #comidas{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 0 10px 10px 0 ;
+
+}
+
+.container #bebidas{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 10px 10px 10px 0 ;
+    
+}
+.container #postres{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 10px 10px 10px 0 ;
+}
+
+footer{
+    background-color: #af5250 ;
+    padding: 1rem;
+    color: black;
+}
+
+footer div{
+   float: right;
+}
+
+footer p{
+   margin: 0;
+}
+
+footer a{
+   transition: color 0.3s ease;
+   color: #fff;
+   text-decoration: none;
+}
+
+footer a:hover{
+   color: #6d2835 ;
+}
+
+@media (max-width: 1440px){
+    .container #comidas{
+         padding: 0 ;
+         gap: 20px;
+         font-size: 15px;
+         }
+
+    .container img{
+         width: 100%;
+        }}
+    
+ @media (max-width: 1440px){
+        .container #bebidas{
+         padding: 0 ;
+         gap: 20px;
+         font-size: 19px;
+     }}
+    
+@media (max-width: 1440px){
+        .container #postres{
+         padding: 0 ;
+         gap: 20px;
+        font-size: 19px; 
+         }}
+@media (max-width: 1024px){
+    .container #comidas{
+         padding: 0 ;
+         gap: 20px;
+         font-size: 10px;
+         }
+    .container #lasaña{
+         font-size: 8px;
+         }
+    .container img{
+         width: 100%;
+        }}
+    
+ @media (max-width: 1024px){
+        .container #bebidas{
+         padding: 0 ;
+         gap: 20px;
+         font-size: 15px;
+     }}
+    
+@media (max-width: 1024px){
+        .container #postres{
+         padding: 0 ;
+         gap: 20px;
+        font-size: 15px; 
+         }}
+
+@media (max-width:768px){
+    .container #comidas{
+        padding: 0 ;
+        gap: 20px;
+        font-size: 10px;
+     }
+    #lasaña{
+        font-size: 9px;
+    }
+     .container img{
+        width: 100%;
+    }}
+
+@media (max-width: 768px){
+     .container #bebidas{
+        padding: 0 ;
+        margin: 0;
+        gap: 20px;
+        font-size: 10px;
+    }}
+
+ @media (max-width: 768px){
+     .container #postres{
+        padding: 0 ;
+        gap: 20px;
+        font-size: 10px;
+     }}
+ 
+@media (max-width: 320px){
+    .container #comidas{
+         padding: 0 ;
+         gap: 5px;
+         font-size: 4px;
+     }
+    .container #lasaña{
+         font-size: 4px;
+     }
+     .container h2{
+        font-size: 5px;
+     }
+     .container img{
+         width: 100%;
+         height: 40%;
+    
+    }}
+            
+@media (max-width: 320px){
+    .container #bebidas{
+         padding: 0 ;
+         gap: 5px;
+         font-size: 5px;
+     }}
+            
+@media (max-width: 320px){
+     .container #postres{
+         padding: 0 ;
+         gap: 5px;
+         font-size: 5px; 
+     }}
